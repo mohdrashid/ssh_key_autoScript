@@ -1,7 +1,7 @@
 #!/bin/bash
 # Ask the username
 echo "Please enter your username"
-read $username
+read username
 
 sudo adduser $username
 # Generating keys
