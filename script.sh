@@ -8,7 +8,7 @@ sudo adduser $username
 
 echo "/home/$username/.ssh/authorized_keys" | ssh-keygen -t rsa
 # Moving files to format required by system
-mv /home/$username/.ssh/authorized_keys /home/$username/.ssh/authorized_keys.ppk
-mv /home/$username/.ssh/authorized_keys.pub /home/$username/.ssh/authorized_keys
-chown $username:$username -R /home/$username/.ssh 
+sudo mv /home/$username/.ssh/authorized_keys /home/$username/.ssh/authorized_keys.ppk
+sudo mv /home/$username/.ssh/authorized_keys.pub /home/$username/.ssh/authorized_keys
+sudo chown $username:$username -R /home/$username/.ssh 
 
